@@ -1,0 +1,59 @@
+/* Siga as orientações no arquivo README para concluir o exercício */
+
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #126443;
+    color: #3a6555;
+}
+
+.cabecalho {
+    background-color: #9BEDCD;
+    display: flex;
+    align-items: center;
+flex-direction: column-reverse;
+
+}
+
+.titulo {
+    color: azure;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    order: 1;
+}
+
+.subtitulo {
+    color: #126443;
+   display: flex;
+   order: 2;
+}
+
+.conteudo {
+    background-color: #0d3a28;
+   color: #2CC98A; 
+   
+}
+
+.conteudo p {
+    display: flex;
+    color: #E4005A;
+    font-size: 42px;
+    
+}
+
+/*p:nth-of-type(3) :
+ o p representa todos os elementos p que fazem parte da div que está a class "conteudo"
+ enquanto o restante especifica que é somente o terceiro p. */
+.conteudo p:nth-of-type(3) {
+    color: purple;
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+/* @media: é aplicado somente se a tela for menor que 480px */
+@media (max-width: 480px) {
+    .container {
+        background-color: #ADD8E6;
+    }
+}
